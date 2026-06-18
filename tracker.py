@@ -1,6 +1,11 @@
 import json
 import os
 
+def push_to_github():
+    os.system("git add .")
+    os.system('git commit -m "Auto update leetcode tracker"')
+    os.system("git push")
+
 DATA_FILE = "data.json"
 
 def load_data():
@@ -21,7 +26,7 @@ from datetime import date
 
 def log_problem(data):
     print("\n--- Log Today's Practice ---")
-    category = input("Category (arrays/strings/trees/dp/graphs): ").strip().lower()
+    category = input("Category (Maths/arrays/strings/trees/dp/graphs): ").strip().lower()
     difficulty = input("Difficulty (easy/medium/hard): ").strip().lower()
     count = int(input("How many problems solved: ").strip())
 
@@ -90,6 +95,7 @@ def main():
 
     if command == "log":
         log_problem(data)
+        push_to_github()
     elif command == "stats":
         show_stats(data)
     elif command == "reset":

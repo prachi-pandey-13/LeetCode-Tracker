@@ -3,13 +3,26 @@
     "arrays": {
       "easy": 10,
       "medium": 0,
+      "hard": 2,
+      "total": 12
+    },
+    "maths": {
+      "easy": 5,
+      "medium": 5,
       "hard": 0,
       "total": 10
+    },
+    "strings": {
+      "easy": 0,
+      "medium": 5,
+      "hard": 0,
+      "total": 5
     }
   },
   "dates_logged": [
-    "2026-06-14"
+    "2026-06-14",
+    "2026-06-18"
   ],
-  "streak": 1,
-  "last_logged": "2026-06-14"
+  "streak": 2,
+  "last_logged": "2026-06-18"
 }
