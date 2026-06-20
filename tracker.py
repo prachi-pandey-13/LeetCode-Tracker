@@ -26,7 +26,7 @@ from datetime import date
 
 def log_problem(data):
     print("\n--- Log Today's Practice ---")
-    category = input("Category (Maths/arrays/strings/trees/dp/graphs): ").strip().lower()
+    category = input("Category (Maths/arrays/strings/searching/sorting/trees/dp/graphs): ").strip().lower()
     difficulty = input("Difficulty (easy/medium/hard): ").strip().lower()
     count = int(input("How many problems solved: ").strip())
 
